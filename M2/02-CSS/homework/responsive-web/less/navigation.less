@@ -1,0 +1,25 @@
+// Código de Nav acá
+nav {
+	width: 50%;
+	padding: 1.5rem;
+	margin: 1rem auto;
+	color: @nav-font;
+	text-align: center;
+	white-space: nowrap;
+
+	#nav-links {
+		.setNavFormat();
+
+		margin-top: 2rem;
+
+		.nav-link:not(:last-child) {
+			margin-right: 3rem;
+
+			@media screen and (max-width: @phone) {
+				margin-right: 10px;
+			}
+		}
+
+		.setNavLinks();
+	}
+}

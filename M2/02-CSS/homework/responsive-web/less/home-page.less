@@ -1,0 +1,106 @@
+// Conteindo del Home
+
+.home {
+	.intro {
+		.header-image {
+			width: 100%;
+			border-radius: 15px;
+		}
+
+		h2 {
+			padding: 15px;
+		}
+
+		p {
+			padding: 0 15px;
+		}
+	}
+
+	.music-images {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
+		img {
+			width: 28%;
+			margin: 20px 2.5%;
+			border-radius: 20px;
+			height: 100%;
+
+			@media screen and (max-width: @phone) {
+				width: 100%;
+				align-self: center;
+				justify-self: center;
+			}
+		}
+	}
+
+	.musica-nueva {
+		padding: 15px;
+
+		h3 {
+			margin-top: 11px;
+		}
+
+		p {
+			margin-top: 13px;
+		}
+	}
+
+	.actual {
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
+
+		@media screen and (max-width: @phone) {
+			flex-direction: column-reverse;
+			width: 100%;
+			padding: 0;
+			align-items: center;
+		}
+
+		.actual-text {
+			width: 50%;
+
+			@media screen and (max-width: @phone) {
+				width: 100%;
+			}
+
+			h3 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				margin-bottom: 26px;
+			}
+
+			.btn {
+				.setButton(@porcelain; @btn-bg-color; 5px);
+
+				&:hover {
+					background-color: gray;
+					color: black;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.actual-img {
+			width: 46%;
+			margin-left: 4%;
+
+			@media screen and (max-width: @phone) {
+				width: 100%;
+				margin: auto;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+		}
+	}
+}
